@@ -1,0 +1,36 @@
+.navbar {
+    padding: 15px 50px;
+}
+
+.navbar,
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    gap: 50px;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    color: #3B3B3B;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.navbar .logotype {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+}
+
+.navbar .links a.active-page {
+    font-weight: 600;
+    color: #000;
+}
