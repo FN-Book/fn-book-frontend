@@ -1,0 +1,60 @@
+@import url('../../index.css');
+
+.header-container {
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1.title-header,
+p.header-subtitle {
+    font-family: 'Playfair Display';
+    margin-left: 20.73%;
+}
+
+h1.title-header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 124px;
+    line-height: 165px;
+}
+
+p.header-subtitle {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+p.header-lide {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.9);
+    margin-right: 6.25%;
+    max-width: 377px;
+    align-self: self-end;
+}
+
+.line-1 {
+    position: absolute;
+    left: 0;
+    top: 437px;
+}
+
+.line-2 {
+    position: absolute;
+    right: 0;
+    top: 664px;
+}
+
+.header-subtitle span {
+    background-color: #CADFD1;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
