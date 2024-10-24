@@ -1,0 +1,30 @@
+.text-true,
+.text-false {
+    padding: 7px 25px;
+    border-radius: 24px;
+    width: min-content;
+    transition: all 0.5s ease;
+}
+
+.text-true {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.2);
+}
+
+.text-false {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.text-false:hover,
+.text-true:hover {
+    color: white;
+}
+
+.text-false:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.text-true:hover {
+    background-color: rgba(0, 128, 0, 1);
+}
