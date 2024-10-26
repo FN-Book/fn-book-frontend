@@ -74,23 +74,44 @@ const Carousel = () => {
                         />
                     </div>
                     <div>
-                        <img src={jimin} alt="Jimin" />
+                        <MiniCard
+                            image={hobe}
+                            topic="Entretenimento"
+                            flag={true}
+                            title="J-Hope finaliza seu período de serviço militar"
+                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+                            link="https://music.youtube.com/watch?v=4u4d4GWdpo8&list=RDAMPLQP5Af3cx8TegAITWiiHGJ66HybaxKveGjjp"
+                        />
                     </div>
                     <div>
-                        <img src={jin} alt="Jin" />
+                        <MiniCard
+                            image={hobe}
+                            topic="Entretenimento"
+                            flag={false}
+                            title="J-Hope finaliza seu período de serviço militar"
+                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+                        />
                     </div>
                     <div>
-                        <img src={jk} alt="JK" />
+                        <MiniCard
+                            image={hobe}
+                            topic="Entretenimento"
+                            flag={true}
+                            title="J-Hope finaliza seu período de serviço militar"
+                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+                            link="https://music.youtube.com/watch?v=4u4d4GWdpo8&list=RDAMPLQP5Af3cx8TegAITWiiHGJ66HybaxKveGjjp"
+                        />
                     </div>
                     <div>
-                        <img src={rm} alt="RM" />
+                        <MiniCard
+                            image={hobe}
+                            topic="Entretenimento"
+                            flag={false}
+                            title="J-Hope finaliza seu período de serviço militar"
+                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+                        />
                     </div>
-                    <div>
-                        <img src={tae} alt="Tae" />
-                    </div>
-                    <div>
-                        <img src={yoongi} alt="Yoongi" />
-                    </div>
+                    
                 </Slider>
             </div>
         </div>
