@@ -19,11 +19,15 @@
 
 .topic {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 24px;
-    color: white;
+    bottom: 14px;
+    left: 15px;
     transition: opacity 0.5s ease;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
 }
 
 .card-container:hover .card-image {
@@ -38,4 +42,22 @@
 a {
     text-decoration: none;
     color: black;
+}
+
+h1.mini-card-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #131130;
+    margin-top: 12px;
+}
+
+p.mini-card-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #424159;
+    margin-top: 12px;
 }

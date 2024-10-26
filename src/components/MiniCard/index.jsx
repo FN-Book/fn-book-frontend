@@ -21,14 +21,14 @@ export default function MiniCard({ image, topic, flag, title, text, link }) {
             <div className="card-container">
                 <div className="card-image" style={{
                     backgroundImage: isHovered ? `url(${image})` : `linear-gradient(180deg, rgba(0, 0, 0, 0) 65%, #000 100%), url(${image})`,
-                    transition: 'background 0.3s ease',
+                    transition: 'background 0.8s ease',
                     marginBottom: '15px'
                 }}>
                     <p className="topic">{topic}</p>
                 </div>
                 <Flag truth={flag} />
-                <h1>{title}</h1>
-                <p>{text}</p>
+                <h1 className="mini-card-title">{title}</h1>
+                <p className="mini-card-text">{text}</p>
             </div>
         </a >
     )
