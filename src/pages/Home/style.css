@@ -60,3 +60,42 @@ hr {
     margin-top: 160px;
     margin: 0 auto;
 }
+
+/* spotlight styles */
+
+.maps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.spotlight {
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.map-container h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 45px;
+    color: #000;
+    margin-bottom: 7px;
+}
+
+.map-container p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    margin-bottom: 75px;
+}
