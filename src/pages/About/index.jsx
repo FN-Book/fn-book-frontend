@@ -1,37 +1,38 @@
 import React from 'react'
 import { AutomaticSlider, DevInfo } from '../../components'
+import './style.css'
 
 import imgJen from '../../assets/images/slider/photoUser.png'
 import imgJenColored from '../../assets/images/slider/photoUserColored.png'
 
-import imgBeatriz from '../../assets/images/slider/beatriz.png'
 import imgBeatrizColored from '../../assets/images/slider/beatriz-colored.png'
+import imgBeatriz from '../../assets/images/slider/beatriz.png'
 
-import imgCamilly from '../../assets/images/slider/camilly.png'
 import imgCamillyColored from '../../assets/images/slider/camilly-colored.png'
+import imgCamilly from '../../assets/images/slider/camilly.png'
 
-import imgJenCosta from '../../assets/images/slider/beatriz.png'
-import imgJenCostaColored from '../../assets/images/slider/beatriz-colored.png'
 
-import imgJenParreira from '../../assets/images/slider/beatriz.png'
-import imgJenParreiraColored from '../../assets/images/slider/beatriz-colored.png'
 
-import imgGiovanni from '../../assets/images/slider/giovanni.png'
 import imgGiovanniColored from '../../assets/images/slider/giovanni-colored.png'
+import imgGiovanni from '../../assets/images/slider/giovanni.png'
 
-import imgKalil from '../../assets/images/slider/kalil.png'
 import imgKalilColored from '../../assets/images/slider/kalil-colored.png'
+import imgKalil from '../../assets/images/slider/kalil.png'
 
-import imgManuela from '../../assets/images/slider/manuela.png'
 import imgManuelaColored from '../../assets/images/slider/manuela-colored.png'
+import imgManuela from '../../assets/images/slider/manuela.png'
 
-import imgVitoria from '../../assets/images/slider/vitoria.png'
 import imgVitoriaColored from '../../assets/images/slider/vitoria-colored.png'
+import imgVitoria from '../../assets/images/slider/vitoria.png'
 
 
 export default function About() {
   return (
     <div className="container-about">
+      <div className="about-header">
+        <h1>FN Book, seu portal de confiança para acessar informações verdadeiras de maneira rápida e objetiva</h1>
+        <p>Nossa missão é trazer conteúdos claros, fundamentados em fatos e apresentados de forma acessível, garantindo que você se mantenha bem-informado sobre os temas que realmente importam.</p>
+      </div>
       <AutomaticSlider>
         <DevInfo
           devName="Beatriz Matos"
