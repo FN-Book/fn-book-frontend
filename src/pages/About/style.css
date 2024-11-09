@@ -1,25 +1,99 @@
 @import url('../../index.css');
 
+html, #root {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 .container-about .about-header h1{
-font-family: 'Playfair Display';
-font-weight: 700;
-font-size: 48px;
-line-height: 64px;
-text-align: center;
-color: #000000;
-max-width: 1200px;
-margin: 0 auto;
-margin-top: 64px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #000000;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 64px;
 }
 
 .container-about .about-header p{
-font-family: 'Poppins';
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #424159;
-max-width: 920px;
-margin: 0 auto;
-margin-top: 64px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #424159;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content .about-child{
+    flex: 1; 
+    padding: 10px; 
+    margin: 32px 32px;
+}
+
+
+.about-content .about-child h1{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.about-content .about-child p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    color: #424159;
+    margin-top: 16px;
+}
+
+footer {
+    height: 250px;
+    background-color: #1C1C1C;
+    margin-top: 160px;
+}
+
+.about-child form input {
+    font-family: poppins;
+    font-size: 14px;
+    outline: 0;
+    border: 1px solid black;
+    padding: 15px 20px;
+    background: transparent;
+    margin-top: 16px;
+}
+
+.about-child form input[type="text"] {
+    width: 300px;
+}
+
+.about-child form input[type="submit"] {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffff;
+    
+
+}
+
+.about-child form {
+    display: flex;
+    gap: 10px;
 }

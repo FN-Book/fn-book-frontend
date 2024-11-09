@@ -83,6 +83,24 @@ export default function About() {
           devPhotoHover={imgVitoriaColored}
         />
       </AutomaticSlider>
+      <div className="about-content">
+        <div className="about-child">
+          <h1>Quem Somos</h1>
+          <p>Somos estudantes do curso de Análise e Desenvolvimento de Sistemas, movidos pela paixão por tecnologia e inovação. O FN Book nasceu como um projeto da disciplina Práticas em Sociedade Informática II, onde fomos desafiados a aplicar nossas habilidades para recriar uma solução que impactasse positivamente a sociedade.</p>
+          <p>Nosso time é diverso e multidisciplinar, composto por desenvolvedores, designers e entusiastas de tecnologia, todos unidos pelo propósito de combater a desinformação e promover o acesso a informações verídicas. Cada integrante trouxe sua experiência e criatividade para construir o FN Book, com o compromisso de oferecer uma plataforma confiável, eficiente e voltada para o bem-estar de todos os usuários.</p>
+        </div>
+        <div className="about-child">
+          <h1>Fale conosco</h1>
+          <p>Gostaria de falar conosco? nos contate no Whatsapp</p>
+          <p>(19) 9 8224-8477</p>
+          <p>Ou deixe sua mensagem abaixo e aguarde um retorno</p> 
+          <form action="">
+            <input type="text" placeholder='Escreva sua sugestão ou mensagem aqui'/>
+            <input type="submit" value="Enviar" />
+          </form>       
+        </div>
+      </div>
+      <footer></footer>
     </div>
   )
 }
