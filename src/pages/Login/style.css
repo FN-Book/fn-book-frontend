@@ -1,0 +1,30 @@
+
+.main-container-auth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-container-auth .image {
+    display: flex;
+    width: 1080px;
+    height: 1080px;
+    background-image: url('../../assets/images/fn-pb.png');
+    background-size: cover;
+}
+
+.main-container-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-container-content h1 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
+    text-align: center;
+
+    color: #000000;
+}

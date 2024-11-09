@@ -5,6 +5,7 @@ import Carousel from './Carousel'
 import MiniCard from './MiniCard'
 import Flag from './Flag'
 import DevInfo from './DevInfo'
+import Input from './Input'
 
 export {
     AutomaticSlider,
@@ -13,5 +14,6 @@ export {
     Carousel,
     MiniCard,
     Flag,
-    DevInfo
+    DevInfo,
+    Input
 }
