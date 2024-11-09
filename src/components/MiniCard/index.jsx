@@ -14,7 +14,7 @@ export default function MiniCard({ image, topic, flag, title, text, link }) {
     }
 
     return (
-        <a href={link}
+        <div onClick={link}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -30,6 +30,6 @@ export default function MiniCard({ image, topic, flag, title, text, link }) {
                 <h1 className="mini-card-title">{title}</h1>
                 <p className="mini-card-text">{text}</p>
             </div>
-        </a >
+        </div>
     )
 }

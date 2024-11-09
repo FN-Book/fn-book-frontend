@@ -1,20 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import MiniCard from '../MiniCard'
+import ModalViewAllNews from '../ModalViewAllNews'
 
 // Importando imagens
 import hobe from '../../assets/images/test/hobe.png'
-import jimin from '../../assets/images/test/jimin.png'
-import jin from '../../assets/images/test/jin.png'
-import jk from '../../assets/images/test/jk.png'
-import rm from '../../assets/images/test/rm.png'
-import tae from '../../assets/images/test/tae.png'
-import yoongi from '../../assets/images/test/yoongi.png'
-
 import './style.css'
+
+const miniCardData = [
+    {
+        image: hobe,
+        topic: "Entretenimento",
+        flag: true,
+        title: "J-Hope finaliza seu período de serviço militar",
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+    },
+    {
+        image: hobe,
+        topic: "Entretenimento",
+        flag: true,
+        title: "J-Hope finaliza seu período de serviço militar",
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+    },
+    {
+        image: hobe,
+        topic: "Entretenimento",
+        flag: true,
+        title: "J-Hope finaliza seu período de serviço militar",
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+    },
+    {
+        image: hobe,
+        topic: "Entretenimento",
+        flag: true,
+        title: "J-Hope finaliza seu período de serviço militar",
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+    },
+    {
+        image: hobe,
+        topic: "Entretenimento",
+        flag: true,
+        title: "J-Hope finaliza seu período de serviço militar",
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+    },
+    {
+        image: hobe,
+        topic: "Entretenimento",
+        flag: true,
+        title: "J-Hope finaliza seu período de serviço militar",
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+    },
+]
 
 const Carousel = () => {
     const settings = {
@@ -50,70 +89,43 @@ const Carousel = () => {
         ]
     }
 
+    const [modalOpen, setModalOpen] = useState(false)
+    const [selectedCardData, setSelectedCardData] = useState(null)
+
+    const viewAllInformations = (cardData) => {
+        setSelectedCardData(cardData)
+        setModalOpen(true)
+    }
+
     return (
         <div className="container-main-carousel">
             <div className="container-carousel">
                 <Slider {...settings}>
-                    <div>
-                        <MiniCard
-                            image={hobe}
-                            topic="Entretenimento"
-                            flag={true}
-                            title="J-Hope finaliza seu período de serviço militar"
-                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
-                            link="https://music.youtube.com/watch?v=4u4d4GWdpo8&list=RDAMPLQP5Af3cx8TegAITWiiHGJ66HybaxKveGjjp"
-                        />
-                    </div>
-                    <div>
-                        <MiniCard
-                            image={hobe}
-                            topic="Entretenimento"
-                            flag={false}
-                            title="J-Hope finaliza seu período de serviço militar"
-                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
-                        />
-                    </div>
-                    <div>
-                        <MiniCard
-                            image={hobe}
-                            topic="Entretenimento"
-                            flag={true}
-                            title="J-Hope finaliza seu período de serviço militar"
-                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
-                            link="https://music.youtube.com/watch?v=4u4d4GWdpo8&list=RDAMPLQP5Af3cx8TegAITWiiHGJ66HybaxKveGjjp"
-                        />
-                    </div>
-                    <div>
-                        <MiniCard
-                            image={hobe}
-                            topic="Entretenimento"
-                            flag={false}
-                            title="J-Hope finaliza seu período de serviço militar"
-                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
-                        />
-                    </div>
-                    <div>
-                        <MiniCard
-                            image={hobe}
-                            topic="Entretenimento"
-                            flag={true}
-                            title="J-Hope finaliza seu período de serviço militar"
-                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
-                            link="https://music.youtube.com/watch?v=4u4d4GWdpo8&list=RDAMPLQP5Af3cx8TegAITWiiHGJ66HybaxKveGjjp"
-                        />
-                    </div>
-                    <div>
-                        <MiniCard
-                            image={hobe}
-                            topic="Entretenimento"
-                            flag={false}
-                            title="J-Hope finaliza seu período de serviço militar"
-                            text="Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
-                        />
-                    </div>
-                    
+                    {miniCardData.map((card, index) => (
+                        <div>
+                            <MiniCard
+                                key={index}
+                                image={card.image}
+                                topic={card.topic}
+                                flag={card.flag}
+                                title={card.title}
+                                text={card.text}
+                                link={() => viewAllInformations(card)}
+                            />
+
+                        </div>
+                    ))}
                 </Slider>
             </div>
+
+            {modalOpen && (
+                <div className="modal-view-information">
+                    <ModalViewAllNews
+                        data={selectedCardData}
+                        onClose={() => setModalOpen(false)}
+                    />
+                </div>
+            )}
         </div>
     )
 }
