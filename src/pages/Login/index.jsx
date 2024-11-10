@@ -9,6 +9,7 @@ export default function Login() {
 
             </div>
             <div className="main-container-content">
+                <div className="logotype">FN Book</div>
                 <h1>Login</h1>
                 <p className="bem-vindo">Bem vindo(a) de volta! Faça login para continuar</p>
                 <form className="formulario" method="POST" action="">

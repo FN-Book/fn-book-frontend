@@ -6,6 +6,7 @@
     height: 100vh;
     box-sizing: border-box;
     width: 100vw;
+    position: relative;
 }
 
 .main-container-auth .image {
@@ -27,6 +28,18 @@
     padding: 0 100px;
     box-sizing: border-box;
     gap: 10px;
+    position: relative;
+}
+
+.main-container-content .logotype {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+    position: absolute; 
+    top: 35px; 
+    right: 35px;
 }
 
 .main-container-content h1,
