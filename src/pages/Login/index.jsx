@@ -10,16 +10,16 @@ export default function Login() {
             </div>
             <div className="main-container-content">
                 <h1>Login</h1>
-                <p>Bem vindo(a) de volta! Faça login para continuar</p>
-                <form>
-                    <label htmlFor="email">Email:</label>
+                <p className="bem-vindo">Bem vindo(a) de volta! Faça login para continuar</p>
+                <form className="formulario" method="POST" action="">
+                    <label htmlFor="email">Email</label>
                     <Input
                         inputType="text"
                         inputId="email"
                         inputName="email"
                         inputPlaceholder="name@example.com"
                     />
-                    <label htmlFor="senha">Senha:</label>
+                    <label htmlFor="senha">Senha</label>
                     <Input
                         inputType="password"
                         inputId="senha"
@@ -28,9 +28,8 @@ export default function Login() {
                     />
                     <input type="submit" value="Entrar" className="buttonLogin" />
                 </form>
-                <p>Não possui uma conta ainda? <a href="">Crie uma gratuitamente</a></p>
+                <p className="main-container-content-link">Não possui uma conta ainda? <a href="">Crie uma gratuitamente</a></p>
             </div>
-
         </div>
     )
 }
