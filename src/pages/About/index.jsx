@@ -42,7 +42,7 @@ export default function About() {
         />
         <DevInfo
           devName="Camilly Lima"
-          devFunction="desenvolvedora backend"
+          devFunction="desenvolvedora frontend"
           devPhoto={imgCamilly}
           devPhotoHover={imgCamillyColored}
         />

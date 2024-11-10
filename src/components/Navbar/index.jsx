@@ -11,6 +11,7 @@ export default function navbar() {
             <div className="links">
                 <NavLink to={'/'} className={location.pathname === '/' ? 'active-page' : ''}>Início</NavLink>
                 <NavLink to={'/login'} className={location.pathname === '/login' ? 'active-page' : ''}>Login</NavLink>
+                <NavLink to={'/register'} className={location.pathname === '/register' ? 'active-page' : ''}>Cadastro</NavLink>
                 {/* <NavLink to={'/about'} className={location.pathname === '/about' ? 'active-page' : ''}>Painel de análises</NavLink> */}
                 <NavLink to={'/admin-area'} className={location.pathname === '/admin-area' ? 'active-page' : ''}>Área administrativa</NavLink>
                 {/* <NavLink to={'/about'} className={location.pathname === '/about' ? 'active-page' : ''}>Base de notícias</NavLink> */}

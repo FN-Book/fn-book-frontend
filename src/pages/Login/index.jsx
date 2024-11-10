@@ -6,7 +6,10 @@ export default function Login() {
     return (
         <div className="main-container-auth">
             <div className="image">
-
+                <div className="image-tittle">
+                    <h1>Fake News Book</h1>
+                    <p>o seu <span>portal da verdade</span></p>
+                </div>
             </div>
             <div className="main-container-content">
                 <div className="logotype">FN Book</div>
