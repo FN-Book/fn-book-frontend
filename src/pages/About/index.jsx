@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AutomaticSlider, DevInfo } from '../../components'
+import { FaWhatsapp } from "react-icons/fa";
 import './style.css'
 
 import imgJen from '../../assets/images/slider/photoUser.png'
@@ -10,8 +11,6 @@ import imgBeatriz from '../../assets/images/slider/beatriz.png'
 
 import imgCamillyColored from '../../assets/images/slider/camilly-colored.png'
 import imgCamilly from '../../assets/images/slider/camilly.png'
-
-
 
 import imgGiovanniColored from '../../assets/images/slider/giovanni-colored.png'
 import imgGiovanni from '../../assets/images/slider/giovanni.png'
@@ -27,6 +26,18 @@ import imgVitoria from '../../assets/images/slider/vitoria.png'
 
 
 export default function About() {
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const subject = encodeURIComponent('Assunto fixo do e-mail');
+    const body = encodeURIComponent(message);
+    const recipient = 'rochadesouzamanuela@gmail.com';
+
+    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+  };
+
   return (
     <div className="container-about">
       <div className="about-header">
@@ -89,15 +100,22 @@ export default function About() {
           <p>Somos estudantes do curso de Análise e Desenvolvimento de Sistemas, movidos pela paixão por tecnologia e inovação. O FN Book nasceu como um projeto da disciplina Práticas em Sociedade Informática II, onde fomos desafiados a aplicar nossas habilidades para recriar uma solução que impactasse positivamente a sociedade.</p>
           <p>Nosso time é diverso e multidisciplinar, composto por desenvolvedores, designers e entusiastas de tecnologia, todos unidos pelo propósito de combater a desinformação e promover o acesso a informações verídicas. Cada integrante trouxe sua experiência e criatividade para construir o FN Book, com o compromisso de oferecer uma plataforma confiável, eficiente e voltada para o bem-estar de todos os usuários.</p>
         </div>
-        <div className="about-child">
+        <div className="about-child child-2">
           <h1>Fale conosco</h1>
           <p>Gostaria de falar conosco? nos contate no Whatsapp</p>
-          <p>(19) 9 8224-8477</p>
-          <p>Ou deixe sua mensagem abaixo e aguarde um retorno</p> 
-          <form action="">
-            <input type="text" placeholder='Escreva sua sugestão ou mensagem aqui'/>
+          <p><b><FaWhatsapp size={24}/>(19) 9 8224-8477</b></p>
+          <p>Ou deixe sua mensagem abaixo e aguarde um retorno</p>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Escreva sua sugestão ou mensagem aqui"
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
             <input type="submit" value="Enviar" />
-          </form>       
+          </form>
         </div>
       </div>
       <footer></footer>

@@ -15,7 +15,7 @@ export default function Home() {
           <img src={ImgMap} alt="" />
         </div>
         <div className="spotlight">
-          <p style={{marginBottom: '-30px'}}>Manchetes mais acessadas no momento</p>
+          <p style={{ marginBottom: '-30px' }}>Manchetes mais acessadas no momento</p>
 
           <div className="spotlight-content">
             <Flag truth={true} />
@@ -42,9 +42,14 @@ export default function Home() {
         <div className="faq-content">
           <h1 className="title-faq">Perguntas <span>Frequentes</span></h1>
           <p className="subtitle-faq">Como cidadão, quero saber como contatar o chatbot pelo WhatsApp</p>
-          <p className="faq-answer">Lorem ipsum dolor sit amet. Hic aliquid corrupti qui exercitationem omnis sit quia deserunt eos blanditiis voluptatem ut quisquam quia! Et nesciunt debitis non ratione atque est omnis quisquam non ipsam ipsum. Nam autem totam eum</p>
-          <p className="subtitle-faq">Como cidadão, quero saber como contatar o chatbot pelo WhatsApp</p>
-          <p className="faq-answer">Lorem ipsum dolor sit amet. Hic aliquid corrupti qui exercitationem omnis sit quia deserunt eos blanditiis voluptatem ut quisquam quia! Et nesciunt debitis non ratione atque est omnis quisquam non ipsam ipsum. Nam autem totam eum</p>
+          <p className="faq-answer">Para contatar o nosso chatbot pelo WhatsApp, basta enviar uma mensagem
+            para o número (XX) XXXXX-XXXX ou acessar o link whatsapp.com/send?phone=XXXXXXXXXXX. Nosso
+            chatbot está disponível 24 horas por dia para responder suas dúvidas e fornecer informações
+            atualizadas</p>
+          <p className="subtitle-faq">Como cidadão, quero saber como colaborar na identificação de fake news</p>
+          <p className="faq-answer">Você pode colaborar na identificação de fake news enviando notícias suspeitas
+            ou links diretamente para o nosso chatbot ou acessando a seção "Denúncias de Fake News" no nosso site.
+            A equipe analisará cada caso e dará retorno sobre a veracidade da informação.</p>
         </div>
       </div>
       <footer></footer>
