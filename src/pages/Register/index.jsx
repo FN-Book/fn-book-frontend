@@ -59,7 +59,7 @@ export default function Register() {
           />
           <input type="submit" value="Entrar" className="buttonLogin" />
         </form>
-        <p className="main-container-content-link">Já possui uma conta? <a href="">Faça login aqui</a></p>
+        <p className="main-container-content-link">Já possui uma conta? <a href="/login">Faça login aqui</a></p>
       </div>
     </div>
   )

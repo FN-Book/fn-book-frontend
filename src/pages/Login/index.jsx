@@ -32,7 +32,7 @@ export default function Login() {
                     />
                     <input type="submit" value="Entrar" className="buttonLogin" />
                 </form>
-                <p className="main-container-content-link">Não possui uma conta ainda? <a href="">Crie uma gratuitamente</a></p>
+                <p className="main-container-content-link">Não possui uma conta ainda? <a href="/register">Crie uma gratuitamente</a></p>
             </div>
         </div>
     )

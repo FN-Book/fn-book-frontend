@@ -16,7 +16,7 @@ const miniCardData = [
         topic: "Entretenimento",
         flag: true,
         title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal. Agora, ele está focado em reconectar com os fãs, explorar novos projetos e tentar decidir se quer um corte de cabelo diferente. É claro que as ARMYs (e o resto do mundo) ainda estão surtando de alegria com o retorno. Parece que as coisas finalmente estão voltando ao lugar no universo."
     },
     {
         image: hobe,
@@ -62,7 +62,7 @@ const Carousel = () => {
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -97,6 +97,10 @@ const Carousel = () => {
         setModalOpen(true)
     }
 
+    const truncateText = (text, maxChars) => {
+        return text.length > maxChars ? text.substring(0, maxChars) + "..." : text
+    }
+
     return (
         <div className="container-main-carousel">
             <div className="container-carousel">
@@ -109,7 +113,7 @@ const Carousel = () => {
                                 topic={card.topic}
                                 flag={card.flag}
                                 title={card.title}
-                                text={card.text}
+                                text={truncateText(card.text, 91)}
                                 link={() => viewAllInformations(card)}
                             />
 

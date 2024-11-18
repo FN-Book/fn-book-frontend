@@ -13,7 +13,7 @@
 .modal-view-information-content {
     background-color: #F6F1E9;
     /* width: 1200px; */
-    height: auto;
+    height: 640px;
     padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -49,7 +49,7 @@
     line-height: 32px;
 }
 
-.modal-view-information-content img {
+.modal-view-information-content img.img {
     width: 100%;
     height: 290px;
     object-fit: cover;
@@ -57,7 +57,7 @@
     transition: .3s;
 }
 
-.modal-view-information-content img:hover {
+.modal-view-information-content img.img:hover {
     filter: grayscale(0%);
 }
 
@@ -66,4 +66,67 @@
     z-index: 10;
     right: 30px;
     top: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.infos,
+.views,
+.likes,
+.share {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infos {
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.views,
+.likes,
+.share {
+    gap: 7px;
+}
+
+p.content-text {
+    text-align: justify;
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h1.content-title {
+    margin-top: 20px;
+}
+
+.comments .comments-content {
+    overflow-y: auto;
+    max-height: 475px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+}
+
+.comments .comments-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.comments .comments-content::-webkit-scrollbar-track {
+    background: #F6F1E9;
+}
+
+.comments .comments-content::-webkit-scrollbar-thumb {
+    background-color: #C4C0C1;
+    border-radius: none;
+    border: none;
+}
+
+.comments-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

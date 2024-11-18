@@ -6,6 +6,7 @@ import MiniCard from './MiniCard'
 import Flag from './Flag'
 import DevInfo from './DevInfo'
 import Input from './Input'
+import CommentCard from './CommentCard'
 
 export {
     AutomaticSlider,
@@ -15,5 +16,6 @@ export {
     MiniCard,
     Flag,
     DevInfo,
-    Input
+    Input,
+    CommentCard
 }
