@@ -7,6 +7,7 @@ import Flag from './Flag'
 import DevInfo from './DevInfo'
 import Input from './Input'
 import CommentCard from './CommentCard'
+import MapWithClusters from './MapWithClusters'
 
 export {
     AutomaticSlider,
@@ -17,5 +18,6 @@ export {
     Flag,
     DevInfo,
     Input,
-    CommentCard
+    CommentCard,
+    MapWithClusters
 }

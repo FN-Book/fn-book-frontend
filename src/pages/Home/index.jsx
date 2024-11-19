@@ -1,8 +1,10 @@
 import React from 'react'
-import { Header, Carousel, Flag } from '../../components'
+import { Header, Carousel, Flag, MapWithClusters } from '../../components'
 import './style.css'
 
 import ImgMap from '../../assets/images/imagem-mapa.png'
+
+// import MapWithClusters from '../../components'
 
 export default function Home() {
   return (
@@ -12,7 +14,8 @@ export default function Home() {
         <div className="map-container">
           <h1>Mapa de compartilhamento</h1>
           <p>Veja onde se concentra a maior incidência de Fake News</p>
-          <img src={ImgMap} alt="" />
+          {/* <img src={ImgMap} alt="" /> */}
+          <MapWithClusters/>
         </div>
         <div className="spotlight">
           <p style={{ marginBottom: '-30px' }}>Manchetes mais acessadas no momento</p>
