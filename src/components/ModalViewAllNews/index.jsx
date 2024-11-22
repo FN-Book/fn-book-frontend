@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Input from '../Input'
 import Flag from '../Flag'
 import CommentCard from '../CommentCard'
 import './style.css'
 
 import { SlEye } from "react-icons/sl"
-import { LiaHeart } from "react-icons/lia"
+import { LiaHeart, LiaHeartSolid } from "react-icons/lia"
 import { PiShareNetwork } from "react-icons/pi"
 import { VscChromeClose } from "react-icons/vsc";
 
@@ -57,6 +57,18 @@ const commentData = [
 ]
 
 export default function ModalViewAllNews({ data, onClose }) {
+    const [liked, setLiked] = useState(false)
+    const [likeCount, setLikeCount] = useState(data.likes)
+
+    const handleLike = () => {
+        if (liked) {
+            setLiked(false)
+            setLikeCount(likeCount - 1)
+        } else {
+            setLiked(true)
+            setLikeCount(likeCount + 1)
+        }
+    }
     return (
         <div className="modal-view-information">
             <div className="modal-view-information-content">
@@ -71,8 +83,13 @@ export default function ModalViewAllNews({ data, onClose }) {
                             <p>200</p>
                         </div>
                         <div className="likes">
-                            <LiaHeart size={24} />
-                            <p>30</p>
+                            {/* <LiaHeart size={24} />
+                            <p>30</p> */}
+
+                            <button onClick={handleLike} className="btn-like">
+                                {liked ? <LiaHeartSolid size={24} /> : <LiaHeart size={24} />}
+                            </button>
+                            <p className="likes-counter">{likeCount}</p>
                         </div>
                         <div className="share">
                             <PiShareNetwork size={24} />

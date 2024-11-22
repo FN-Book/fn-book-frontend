@@ -16,42 +16,48 @@ const miniCardData = [
         topic: "Entretenimento",
         flag: true,
         title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal. Agora, ele está focado em reconectar com os fãs, explorar novos projetos e tentar decidir se quer um corte de cabelo diferente. É claro que as ARMYs (e o resto do mundo) ainda estão surtando de alegria com o retorno. Parece que as coisas finalmente estão voltando ao lugar no universo."
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal. Agora, ele está focado em reconectar com os fãs, explorar novos projetos e tentar decidir se quer um corte de cabelo diferente. É claro que as ARMYs (e o resto do mundo) ainda estão surtando de alegria com o retorno. Parece que as coisas finalmente estão voltando ao lugar no universo.",
+        likes: 50
     },
     {
         image: hobe,
         topic: "Entretenimento",
         flag: true,
         title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
+        likes: 50
     },
     {
         image: hobe,
         topic: "Entretenimento",
         flag: true,
         title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
+        likes: 50
     },
     {
         image: hobe,
         topic: "Entretenimento",
         flag: true,
         title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
+        likes: 50
     },
     {
         image: hobe,
         topic: "Entretenimento",
         flag: true,
         title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
+        likes: 50
     },
     {
         image: hobe,
         topic: "Entretenimento",
         flag: true,
         title: "J-Hope finaliza seu período de serviço militar",
-        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal"
+        text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
+        likes: 50
     },
 ]
 
