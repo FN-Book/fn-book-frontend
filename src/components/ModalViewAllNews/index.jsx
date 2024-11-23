@@ -69,6 +69,20 @@ export default function ModalViewAllNews({ data, onClose }) {
             setLikeCount(likeCount + 1)
         }
     }
+
+    console.log(data.flag)
+    // teste
+    const handleShare = () => {
+        const text =
+          `Confira esta matéria no FN Book: *${data.title}* \nResultado da verificação: ${data.flag ? "VERDADE" : "MENTIRA"}`;
+        const url = "http://localhost:5173/";
+        const encodedText = encodeURIComponent(`${text} ${url}`);
+        const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedText}`;
+    
+        // Redireciona para o link do WhatsApp
+        window.open(whatsappUrl, "_blank");
+      };
+
     return (
         <div className="modal-view-information">
             <div className="modal-view-information-content">
@@ -92,7 +106,7 @@ export default function ModalViewAllNews({ data, onClose }) {
                             <p className="likes-counter">{likeCount}</p>
                         </div>
                         <div className="share">
-                            <PiShareNetwork size={24} />
+                            <PiShareNetwork size={24} onClick={handleShare} />
                             <p>30</p>
                         </div>
                         <Flag truth={data.flag} />

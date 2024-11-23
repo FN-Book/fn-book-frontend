@@ -8,7 +8,7 @@ import ModalViewAllNews from '../ModalViewAllNews'
 
 // Importando imagens
 import hobe from '../../assets/images/test/hobe.png'
-import './style.css'
+import './style.css'    
 
 const miniCardData = [
     {
@@ -22,8 +22,8 @@ const miniCardData = [
     {
         image: hobe,
         topic: "Entretenimento",
-        flag: true,
-        title: "J-Hope finaliza seu período de serviço militar",
+        flag: false,
+        title: "J-Hope desiste do exército",
         text: "Após servir ao exército coreano por 2 anos, o querido voltou à vida de um ser humano normal",
         likes: 50
     },

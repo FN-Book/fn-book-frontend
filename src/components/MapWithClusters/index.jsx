@@ -4,13 +4,21 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import 'leaflet.markercluster';
 
+import icon from '../../assets/vectors/location.svg'
+
 
 const customIcon = new L.Icon({
-  iconUrl: 
-  'file:///C:/Users/HT3027805/Downloads/localizacao-_1_.svg',
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
+//   iconUrl: icon,
+//   iconAnchor: [12, 41],
+//   popupAnchor: [1, -34],
+//   shadowSize: [41, 41],
+
+iconUrl: icon,
+  iconSize: [25, 41], // Tamanho do ícone
+  iconAnchor: [12, 41], // Posição do ponto de ancoragem
+  popupAnchor: [1, -34], // Posição do popup relativo ao ícone
+  shadowUrl: null, // Define que não há sombra
+  shadowSize: null, // Remove o tamanho da sombra
 });
 
 const MapWithClusters = () => {
@@ -94,7 +102,7 @@ const MapWithClusters = () => {
     // Adiciona o cluster ao mapa
     markerCluster.addTo(map);
 
-  }, [map]); // Executa o efeito apenas quando o mapa estiver disponível
+  }, [map]);
 
   return null; // Não renderiza nada diretamente, pois o mapa é renderizado no MapContainer
 };
@@ -106,7 +114,7 @@ const MapPage = () => (
   attribution='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="https://carto.com/attributions">CartoDB</a>'
 />
 
-    <MapWithClusters />  {/* O componente do mapa precisa ser colocado aqui */}
+    <MapWithClusters />
   </MapContainer>
 );
 
