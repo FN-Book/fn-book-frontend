@@ -12,7 +12,7 @@ export default function Register() {
         </div>
       </div>
       <div className="main-container-content">
-        <div className="logotype">FN Book</div>
+        <div className="logotype"><a href='/'>FN Book</a></div>
         <h1>Cadastro</h1>
         <p className="bem-vindo">Bem vindo(a)! É um prazer ter você conosco</p>
         <form className="formulario" method="POST" action="">

@@ -12,7 +12,7 @@ export default function Login() {
                 </div>
             </div>
             <div className="main-container-content">
-                <div className="logotype">FN Book</div>
+                <div className="logotype"><a href='/'>FN Book</a></div>
                 <h1>Login</h1>
                 <p className="bem-vindo">Bem vindo(a) de volta! Faça login para continuar</p>
                 <form className="formulario" method="POST" action="">
