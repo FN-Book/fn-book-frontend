@@ -61,3 +61,15 @@ p.mini-card-text {
     color: #424159;
     margin-top: 12px;
 }
+
+@media screen and (max-width: 690px) {
+    .card-container {
+        width: 94%;
+        height: 300px;
+        margin-left: 10px;
+    }
+
+    .container-carousel {
+        width: 84vw;
+    }
+}

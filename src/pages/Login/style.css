@@ -1,4 +1,3 @@
-
 .main-container-auth {
     display: flex;
     flex-direction: row;
@@ -133,6 +132,8 @@
     font-weight: 500;
 }
 
-
-
-
+@media screen and (max-width: 1460px) {
+    .main-container-auth .image {
+        display: none;
+    }
+}

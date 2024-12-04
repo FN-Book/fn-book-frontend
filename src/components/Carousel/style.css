@@ -19,3 +19,12 @@
 .container-carousel {
     gap: 10px;
 }
+
+.title-carousel {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 45px;
+    margin-bottom: 40px;
+}

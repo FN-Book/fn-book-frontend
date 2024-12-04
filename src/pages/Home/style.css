@@ -68,16 +68,28 @@ hr {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .spotlight {
     width: 100%;
-    max-width: 540px;
+    max-width: 560px;
     display: flex;
     flex-direction: column;
     gap: 60px;
+}
+
+.spotlight-content {
+    cursor: pointer;
+}
+
+.spotlight-content h1 {
+    transition: text-decoration .3s;
+}
+
+.spotlight-content h1:hover {
+    text-decoration: underline;
 }
 
 .map-container h1 {
@@ -98,4 +110,73 @@ hr {
     line-height: 27px;
     color: #000;
     margin-bottom: 75px;
+}
+
+.map-content {
+   height: 500px;
+   width: 900px;
+   z-index: 1;
+}
+
+@media screen and (max-width: 1840px) {
+    .map-content {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1740px) {
+    .map-content {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1640px) {
+    .map-content {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    .map-content {
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .maps {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    .map-content {
+        width: 100%;
+    }
+
+    .spotlight {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .maps {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .maps {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .maps {
+        margin-top: 160px;
+    }
 }

@@ -161,3 +161,45 @@ input[type="file"]::-webkit-file-upload-button {
     text-decoration: none;
     font-weight: 500;
 }
+
+@media screen and (max-width: 1460px) {
+    .main-container-auth .image {
+        display: none;
+    }
+
+    .main-container-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .container-data-foto {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main-container-section {
+        width: 100%;
+    }
+
+    .main-container-content {
+        padding: 0 7%;
+    }
+
+    .main-container-section h1 {
+        font-size: 44px;
+        margin-top: 180px;
+    }
+
+    .main-container-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .main-container-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

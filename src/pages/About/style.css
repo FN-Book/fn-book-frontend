@@ -104,3 +104,64 @@ footer {
     padding-left: 100px;
     border-left: 1px solid black;
 }
+
+@media screen and (max-width: 1560px) {
+    .about-content {
+        padding: 0 7%;
+    }
+
+    .about-header {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .child-2 {
+        padding-left: 0;
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .about-child form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-child form input[type="text"] {
+        width: 89%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-child form input[type="text"] {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .container-about .about-header p, .container-about .about-header h1 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container-about .about-header h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .about-header {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .about-content .about-child p {
+        line-height: 24px;
+    }
+}
