@@ -6,6 +6,7 @@ import './style.css'
 
 import { SlEye } from "react-icons/sl"
 import { LiaHeart, LiaHeartSolid } from "react-icons/lia"
+import { LiaHeart, LiaHeartSolid } from "react-icons/lia"
 import { PiShareNetwork } from "react-icons/pi"
 import { VscChromeClose } from "react-icons/vsc"
 import { comments as newsData } from '../../mock/comments'
