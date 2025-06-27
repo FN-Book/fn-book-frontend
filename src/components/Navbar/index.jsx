@@ -36,6 +36,7 @@ export default function navbar() {
                 </button>
                 <div className={`links ${isMenuOpen ? "open" : ""}`}>
                     <NavLink to={'/'} className={location.pathname === '/' ? 'active-page' : ''}>Início</NavLink>
+                    <NavLink to={'/quiz'} className={location.pathname === '/quiz' ? 'active-page' : ''}>Jogo</NavLink>
                     {/* <NavLink to={'/about'} className={location.pathname === '/about' ? 'active-page' : ''}>Painel de análises</NavLink> */}
                     {/* <NavLink to={'/admin-area'} className={location.pathname === '/admin-area' ? 'active-page' : ''}>Área administrativa</NavLink> */}
                     <NavLink to={'/about'} className={location.pathname === '/about' ? 'active-page' : ''}>Sobre nós</NavLink>

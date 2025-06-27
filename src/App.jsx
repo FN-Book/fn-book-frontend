@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { About, AdminArea, Home, Login, Register } from './pages'
+import { About, AdminArea, Home, Login, Register, QuizGame } from './pages'
 import Navbar from './components/Navbar'
 import { Outlet } from 'react-router-dom';
 
@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/admin-area" element={<AdminArea />} />
         <Route path="/about" element={<About />} />
+        <Route path="/quiz" element={<QuizGame />} />
       </Route>
     </Routes>
   )
