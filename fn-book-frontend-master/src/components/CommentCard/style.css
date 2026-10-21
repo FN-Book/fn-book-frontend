@@ -1,0 +1,47 @@
+.comment-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.comment-container img {
+    width: 54px;
+    height: 54px;
+    border-radius: 45px;
+}
+
+.comment-container .comment-info-text .name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.comment-container .comment-info-text .text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #454545;
+    margin-top: 2px;
+}
+
+.likes-counter {
+    font-size: 14px;
+}
+
+.btn-like {
+    border: none;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+.comment-info-likes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}

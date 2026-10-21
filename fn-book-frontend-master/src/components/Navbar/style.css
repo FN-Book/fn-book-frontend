@@ -1,0 +1,130 @@
+.navbar {
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    background-color: #f6f1e9;
+    width: -webkit-fill-available;
+    z-index: 50;
+    transition: .3s;
+}
+
+.navbar.scrolled {
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar,
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    gap: 50px;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    color: #3B3B3B;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.navbar .logotype {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+}
+
+.navbar .links a.active-page {
+    font-weight: 600;
+    color: #000;
+}
+
+.links .btn-login {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin-right: -36px;
+    transition: .3s;
+}
+
+.links .btn-register,
+.links .btn-login:hover {
+    padding: 10px 20px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+
+
+
+
+/* ainda em fase de testes  */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+  }
+
+@media screen and (max-width: 680px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 70px;
+        right: -200px;
+        background: #f6f1e9;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        height: 0;
+        overflow: hidden;
+        width: 140px;
+        z-index: 10;
+        transition: right 0.4s ease-in-out;
+    }
+
+    .links.open {
+        height: auto;
+        padding: 30px;
+        right: 0;
+        align-items: end;
+    }
+
+    .links.open a {
+        font-size: 14px;
+    }
+
+    .navbar .links.open {
+        gap: 28px;
+    }
+
+    .navbar {
+        padding: 15px 7%;
+    }
+
+    .links .btn-login {
+        margin-right: 0;
+    }
+}
+

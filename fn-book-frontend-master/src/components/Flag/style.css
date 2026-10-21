@@ -1,0 +1,34 @@
+.text-true,
+.text-false {
+    padding: 5px 10px;
+    border-radius: 24px;
+    width: min-content;
+    transition: all 0.5s ease;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.text-true {
+    color: #26653A;
+    background-color: #CAE7D3;
+}
+
+.text-false {
+    color: #8A1D28;
+    background-color: #FBC0C6;
+}
+
+.text-false:hover,
+.text-true:hover {
+    color: white;
+}
+
+.text-false:hover {
+    background-color: #8A1D28;
+}
+
+.text-true:hover {
+    background-color: #26653A;
+}

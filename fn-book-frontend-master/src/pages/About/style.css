@@ -1,0 +1,167 @@
+@import url('../../index.css');
+
+html,
+#root {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container-about .about-header h1 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #000000;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.container-about .about-header p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #424159;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+    gap: 100px;
+}
+
+.about-content .about-child h1 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.about-content .about-child p b {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.about-content .about-child p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    color: #424159;
+    margin-top: 16px;
+}
+
+footer {
+    height: 250px;
+    background-color: #1C1C1C;
+    margin-top: 160px;
+}
+
+.about-child form input {
+    font-family: poppins;
+    font-size: 14px;
+    outline: 0;
+    border: 1px solid black;
+    padding: 15px 20px;
+    background: transparent;
+    margin-top: 16px;
+}
+
+.about-child form input[type="text"] {
+    width: 300px;
+}
+
+.about-child form input[type="submit"] {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.about-child form {
+    display: flex;
+    gap: 10px;
+}
+
+.child-2 {
+    padding-left: 100px;
+    border-left: 1px solid black;
+}
+
+@media screen and (max-width: 1560px) {
+    .about-content {
+        padding: 0 7%;
+    }
+
+    .about-header {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .child-2 {
+        padding-left: 0;
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .about-child form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-child form input[type="text"] {
+        width: 89%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-child form input[type="text"] {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .container-about .about-header p, .container-about .about-header h1 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container-about .about-header h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .about-header {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .about-content .about-child p {
+        line-height: 24px;
+    }
+}
