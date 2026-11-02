@@ -8,6 +8,7 @@ import DevInfo from './DevInfo'
 import Input from './Input'
 import CommentCard from './CommentCard'
 import MapWithClusters from './MapWithClusters'
+import Footer from './Footer'
 
 export {
     AutomaticSlider,
@@ -19,5 +20,6 @@ export {
     DevInfo,
     Input,
     CommentCard,
-    MapWithClusters
+    MapWithClusters,
+    Footer
 }
