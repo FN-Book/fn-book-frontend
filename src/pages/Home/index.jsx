@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Header, Carousel, Flag, MapWithClusters } from '../../components'
+import { Header, Carousel, Flag, MapWithClusters, Footer } from '../../components'
 import ModalViewAllNews from '../../components/ModalViewAllNews'
 import { news as data } from '../../mock/news'
 import './style.css'
@@ -56,7 +56,7 @@ export default function Home() {
             ou links diretamente para o nosso chatbot, ele possui suporte para imagens, vídeos e texto.</p>
         </div>
       </div>
-      <footer></footer>
+      <Footer/>
 
       {modalOpen && (
         <div className="modal-view-information">

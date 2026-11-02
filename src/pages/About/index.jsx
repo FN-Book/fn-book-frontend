@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AutomaticSlider, DevInfo } from '../../components'
+import { AutomaticSlider, DevInfo, Footer } from '../../components'
 import { FaWhatsapp } from "react-icons/fa"
 import './style.css'
 
@@ -121,7 +121,7 @@ export default function About() {
           </form>
         </div>
       </div>
-      <footer></footer>
+      <Footer />
     </div>
   )
 }
